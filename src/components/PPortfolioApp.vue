@@ -22,7 +22,7 @@
       </v-layout>
     </v-card-title>
     <v-card-text>
-      <div>{{app.description}}</div>
+      <div class="app-description">{{app.description}}</div>
       <div class="title mt-2">Technologies Used</div>
       <v-layout>
         <template v-for="(tech, i) in app.technologies">
@@ -71,5 +71,8 @@ export default {
     transition: 
     transform 400ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
-}
+  }
+  .app-description {
+    min-height: 130px;
+  }
 </style>
