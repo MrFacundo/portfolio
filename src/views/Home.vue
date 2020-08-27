@@ -215,7 +215,7 @@ export default {
             },
           ],
           description:
-            "An e-commerce front-end prototype, with responsive layout, and sorting methods and filters.",
+            "An e-commerce front-end prototype, with responsive layout, sorting methods and filters.",
           technologies: [
             {
               name: "React",
