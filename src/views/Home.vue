@@ -22,7 +22,7 @@
     </v-img>
     <v-container class="mt-10">
       <v-layout wrap>
-        <v-flex xs12 >
+        <v-flex xs12>
           <div class="display-2 font-weight-bold" id="about">About me</div>
         </v-flex>
         <v-flex xs12 mt-5 mb-10>
@@ -45,22 +45,21 @@
       </v-layout>
     </v-container>
     <v-container style="background: #f5f5f5">
-    <v-layout fill-height align-center>
-      <v-container>
-      <v-layout wrap my-5 class="contact">
-        <v-flex xs12 mb-5 mt-5>
-          <div class="display-2 font-weight-bold" id="contact">Contact</div>
-        </v-flex>
-        <template v-for="(contact, i) in contactLinks">
-          <v-flex sm6 md4 xs12 :key="i">
-            <p-contact-info :contact="contact" />
-          </v-flex>
-        </template>
+      <v-layout fill-height align-center>
+        <v-container>
+          <v-layout wrap my-5 class="contact">
+            <v-flex xs12 mb-5 mt-5>
+              <div class="display-2 font-weight-bold" id="contact">Contact</div>
+            </v-flex>
+            <template v-for="(contact, i) in contactLinks">
+              <v-flex sm6 md4 xs12 :key="i">
+                <p-contact-info :contact="contact" />
+              </v-flex>
+            </template>
+          </v-layout>
+        </v-container>
       </v-layout>
-      </v-container>
-    </v-layout>
     </v-container>
-
   </div>
 </template>
 
@@ -73,7 +72,7 @@ export default {
   name: "home",
   components: {
     PPortfolioApp,
-    PContactInfo
+    PContactInfo,
   },
   data() {
     return {
@@ -87,8 +86,8 @@ export default {
             {
               name: "apple",
               icon: "mdi-apple",
-              link: "https://secretchef1.herokuapp.com/"
-            }
+              link: "https://secretchef1.herokuapp.com/",
+            },
           ],
           description:
             "Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked! A project developed during my last week as a student at Le Wagon Bootcamp.",
@@ -104,19 +103,19 @@ export default {
             {
               name: "ActiveRecord",
               icon: "mdi-database-search",
-              link: ""
+              link: "",
             },
             {
-              name: "Node",
+              name: "Javascript",
               icon: "mdi-language-javascript",
-              link: ""
-            }
+              link: "",
+            },
           ],
           code: {
             name: "github",
             icon: "mdi-github",
-            link: "https://github.com/MrFacundo/Who-s-cooking"
-          }
+            link: "https://github.com/MrFacundo/Who-s-cooking",
+          },
         },
         {
           name: "Video game Quiz",
@@ -126,38 +125,38 @@ export default {
             {
               name: "apple",
               icon: "mdi-apple",
-              link: "https://mrfacundo.github.io/vueJS-videogame-quiz/"
+              link: "https://mrfacundo.github.io/vueJS-videogame-quiz/",
             },
             {
               name: "android",
               icon: "mdi-android",
-              link: ""
-            }
+              link: "",
+            },
           ],
-          description: 
-          "A simple quiz that asks the user 10 questions, keeps track of the correct answers, the number of questions as well as displaying the quiz results and a progress bar. A short project I made to learn the VueJS basics.",
+          description:
+            "A simple quiz that asks the user 10 questions, keeps track of the correct answers, the number of questions as well as displaying the quiz results and a progress bar. A short project I made to learn the VueJS basics.",
           technologies: [
             {
               name: "VueJS",
               icon: "mdi-vuejs",
-              link: ""
+              link: "",
             },
             {
               name: "Bootstrap",
               icon: "mdi-bootstrap",
-              link: ""
+              link: "",
             },
             {
-              name: "Node",
-              icon: "mdi-nodejs",
-              link: ""
-            }
+              name: "Javascript",
+              icon: "mdi-language-javascript",
+              link: "",
+            },
           ],
           code: {
             name: "github",
             icon: "mdi-github",
-            link: "https://github.com/MrFacundo/vueJS-videogame-quiz"
-          }
+            link: "https://github.com/MrFacundo/vueJS-videogame-quiz",
+          },
         },
         {
           name: "Shoot me",
@@ -167,13 +166,13 @@ export default {
             {
               name: "apple",
               icon: "mdi-apple",
-              link: "http://shoot-me-398.herokuapp.com/"
+              link: "http://shoot-me-398.herokuapp.com/",
             },
             {
               name: "android",
               icon: "mdi-android",
-              link: ""
-            }
+              link: "",
+            },
           ],
           description:
             "Similar to AirBnB, but for filming locations. Another project I developed during my coding bootcamp.",
@@ -181,29 +180,62 @@ export default {
             {
               name: "Ruby on Rails",
               icon: "mdi-language-ruby-on-rails",
-              link: ""
+              link: "",
             },
             {
               name: "Bootstrap",
               icon: "mdi-bootstrap",
-              link: ""
+              link: "",
             },
             {
               name: "ActiveRecord",
               icon: "mdi-database-search",
-              link: ""
+              link: "",
             },
             {
               name: "Node",
               icon: "mdi-language-javascript",
-              link: ""
-            }
+              link: "",
+            },
           ],
           code: {
             name: "github",
             icon: "mdi-github",
-            link: "https://github.com/MrFacundo/Shoot-Me"
-          }
+            link: "https://github.com/MrFacundo/Shoot-Me",
+          },
+        },
+        {
+          name: "E-commerce (to be deployed)",
+          logo: "ecommerce.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://secretchef1.herokuapp.com/",
+            },
+          ],
+          description:
+            "An e-commerce front-end prototype, with responsive layout, and sorting methods and filters.",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+            },
+            {
+              name: "GraphQL",
+              icon: "mdi-graphql",
+            },
+            {
+              name: "Node",
+              icon: "mdi-nodejs",
+              link: "",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/e-commerce",
+          },
         },
       ],
       contactLinks: [
@@ -211,22 +243,22 @@ export default {
           name: "Email",
           value: "ftroitero@gmail.com",
           link: "mailto:ftroitero@gmail.com",
-          icon: "mdi-email"
+          icon: "mdi-email",
         },
         {
           name: "LinkedIn",
           value: "Facundo Troitero",
           link: "https://www.linkedin.com/in/facundo-troitero/",
-          icon: "mdi-linkedin"
+          icon: "mdi-linkedin",
         },
         {
           name: "Github",
           value: "MrFacundo",
           link: "https://github.com/MrFacundo/",
-          icon: "mdi-github"
+          icon: "mdi-github",
         },
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
