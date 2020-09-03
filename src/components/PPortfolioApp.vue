@@ -17,7 +17,6 @@
         </v-flex>
         <v-flex xs7>
           <div>{{app.name}}</div>
-
         </v-flex>
       </v-layout>
     </v-card-title>
@@ -28,8 +27,8 @@
         <template v-for="(tech, i) in app.technologies">
           <v-flex xs3 :key="i">
             <div class="text-center">
-              <v-btn icon >
-                <v-icon >{{tech.icon}}</v-icon>
+              <v-btn icon>
+                <v-icon>{{tech.icon}}</v-icon>
               </v-btn>
               <div class="caption">{{tech.name}}</div>
             </div>
@@ -51,28 +50,26 @@ export default {
   props: {
     app: {
       type: Object,
-      default: function() {
+      default: function () {
         return {};
-      }
-    }
+      },
+    },
   },
   methods: {
     logo(name) {
       return require("../assets/" + name);
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style>
-  .code-logo:hover,
-  .image-logo:hover {
-    transform: scale(1.2);
-    transition: 
-    transform 400ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
-  }
-  .app-description {
-    min-height: 130px;
-  }
+.code-logo:hover,
+.image-logo:hover {
+  transform: scale(1.2);
+  transition: transform 400ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+.app-description {
+  min-height: 130px;
+}
 </style>

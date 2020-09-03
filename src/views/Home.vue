@@ -205,6 +205,43 @@ export default {
           },
         },
         {
+          name: "JuniorDev Positions",
+          logo: "juniordevpos.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "",
+            },
+          ],
+          description:
+            "A job board app for entry level developers. The app receives a data feed from the GitHub Jobs API, filters the results through a simple algorythm and displays them through React FrontEnd",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+            },
+            {
+              name: "Node",
+              icon: "mdi-nodejs",
+              link: "",
+            },
+            {
+              name: "Express REST API",
+              icon: "mdi-api",
+            },
+            {
+              name: "Material UI",
+              icon: "mdi-material-ui",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/juniordevpositions",
+          },
+        },
+        {
           name: "E-commerce (to be deployed)",
           logo: "ecommerce.png",
           platforms: [
