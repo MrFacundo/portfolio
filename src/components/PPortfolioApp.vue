@@ -25,7 +25,7 @@
       <div class="title mt-2">Technologies Used</div>
       <v-layout>
         <template v-for="(tech, i) in app.technologies">
-          <v-flex xs3 :key="i">
+          <v-flex xs3 justify-space-between :key="i">
             <div class="text-center">
               <v-btn icon>
                 <v-icon>{{tech.icon}}</v-icon>
