@@ -77,7 +77,7 @@ export default {
   data() {
     return {
       aboutText:
-        "I am a full-stack developer based in Berlin who enjoys building functional and user-friendly websites and web applications. I'm passionate about learning new technologies and applying them in the projects I work in. ",
+        "I am a front-end developer based in Berlin who enjoys building functional and user-friendly websites and web applications. I'm constantly learning new technologies, as well as the basics of web programming and applying new skills in the projects I work in.",
       apps: [
         {
           name: "Secret Chef",
@@ -272,6 +272,38 @@ export default {
             name: "github",
             icon: "mdi-github",
             link: "https://github.com/MrFacundo/e-commerce",
+          },
+        },
+        {
+          name: "Job Search UI",
+          logo: "job-search-ui.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://job-search-ui398.herokuapp.com/",
+            },
+          ],
+          description:
+            "Another job board Frontend app. This one lists job posts by fetching search results from the Joblocal (local job offers in Germany) API.",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+            },
+            {
+              name: "Express.js",
+              icon: "mdi-api",
+            },
+            {
+              name: "React-Bootstrap",
+              icon: "mdi-bootstrap",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/job-search-ui/",
           },
         },
       ],
