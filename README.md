@@ -2,7 +2,7 @@
 
 ## Description
 
-Portfolio website built with Vue js and Vuetify framekorks
+Portfolio website built with Vue js and Vuetify
 
 ## Links to Resources
 
@@ -12,9 +12,8 @@ Portfolio website built with Vue js and Vuetify framekorks
 
 [Website](https://mrfacundo.github.io/portfolio/)
 
-
-
 ## Project setup
+
 ```
 yarn install
 yarn run serve
@@ -22,4 +21,3 @@ yarn run build
 yarn run test
 yarn run lint
 ```
-
