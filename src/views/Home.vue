@@ -31,7 +31,7 @@
       </v-layout>
       <v-layout wrap my-5 mt-5>
         <v-flex xs12>
-          <div class="display-2 font-weight-bold" id="portfolio">My projects</div>
+          <div class="display-2 font-weight-bold mb-5" id="portfolio">Some of my projects</div>
         </v-flex>
         <v-flex xs12 class="mt-5">
           <v-layout wrap>
@@ -77,7 +77,7 @@ export default {
   data() {
     return {
       aboutText:
-        "I am a front-end developer based in Berlin who enjoys building functional and user-friendly websites and web applications. I'm constantly learning new technologies, as well as the basics of web programming and applying new skills in the projects I work in.",
+        "I am a front-end developer from Buenos Aires, currently based in Berlin. A recent bootcamp graduate, I take every opportunity I can to learn and apply new things on front-end projects. Besides programming, I've got a special interest in jazz and cats.",
       apps: [
         {
           name: "Secret Chef",
@@ -90,7 +90,7 @@ export default {
             },
           ],
           description:
-            "Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked! A project developed during my last week as a student at Le Wagon Bootcamp.",
+            "Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked. A Ruby on Rails project I developed during my while studying at Le Wagon Bootcamp.",
           technologies: [
             {
               name: "Ruby on Rails",
@@ -134,7 +134,7 @@ export default {
             },
           ],
           description:
-            "A simple quiz that asks the user 10 questions, keeps track of the correct answers, the number of questions as well as displaying the quiz results and a progress bar. A short project I made to learn the VueJS basics.",
+            "A simple quiz I built to get started with Vue.js.",
           technologies: [
             {
               name: "VueJS",
@@ -175,7 +175,7 @@ export default {
             },
           ],
           description:
-            "Similar to AirBnB, but for filming locations. Another project I developed during my coding bootcamp.",
+            "Similar to AirBnB, but for filming locations. Another Ruby on Rails project I developed during my coding bootcamp.",
           technologies: [
             {
               name: "Ruby on Rails",
@@ -205,7 +205,7 @@ export default {
           },
         },
         {
-          name: "JuniorDev Positions",
+          name: "JuniorDev Positions (to be deployed)",
           logo: "juniordevpos.png",
           platforms: [
             {
@@ -252,7 +252,7 @@ export default {
             },
           ],
           description:
-            "An e-commerce front-end prototype, with responsive layout, sorting methods and filters.",
+            "An e-commerce front-end prototype, with responsive layout, sorting methods and filters, built on React.",
           technologies: [
             {
               name: "React",
@@ -304,6 +304,42 @@ export default {
             name: "github",
             icon: "mdi-github",
             link: "https://github.com/MrFacundo/job-search-ui/",
+          },
+        },
+        {
+          name: "Weather App",
+          logo: "weather.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://afternoon-cliffs-65346.herokuapp.com/",
+            },
+          ],
+          description:
+            "A weather app that includes geolocation and dynamic backgrounds. I also used this projects to get familiar with Redux, Typescript and Bulma.",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+            },
+            {
+              name: "Typescript.js",
+              icon: "mdi-language-typescript",
+            },
+            {
+              name: "Redux",
+              icon: "mdi-react",
+            },
+            {
+              name: "Bulma",
+              icon: "mdi-bulma",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/weatherapp3",
           },
         },
       ],
