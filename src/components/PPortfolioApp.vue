@@ -1,5 +1,5 @@
 <template>
-  <v-card flat color="transparent" max-width="350px">
+  <v-card flat color="transparent" max-width="350px" class="mb-5">
     <v-card-title>
       <v-layout>
         <v-flex>
@@ -16,13 +16,13 @@
           </v-card>
         </v-flex>
         <v-flex xs7>
-          <div>{{app.name}}</div>
+          <div class="app-name">{{app.name}}</div>
         </v-flex>
       </v-layout>
     </v-card-title>
     <v-card-text>
       <div class="app-description">{{app.description}}</div>
-      <div class="title mt-2">Technologies Used</div>
+      <div class="title my-2">Technologies Used</div>
       <v-layout>
         <template v-for="(tech, i) in app.technologies">
           <v-flex xs3 justify-space-between :key="i">
@@ -71,5 +71,11 @@ export default {
 }
 .app-description {
   min-height: 130px;
+  max-width: 100%;
+  word-break: normal;
+}
+
+.app-name {
+  word-break: normal;
 }
 </style>

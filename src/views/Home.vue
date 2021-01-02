@@ -1,34 +1,36 @@
 <template>
   <div class="home">
-    <v-img
+    <v-parallax
+      height="500"
       dark
-      max-height="500px"
       src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
     >
       <v-layout fill-height align-center>
-        <v-container>
-          <v-row align="center" justify="center" class="white--text">
+        <v-container align-md="center" align-sm="start" >
+          <v-row align-md="center" align-sm="start" justify="center" class="white--text">
             <v-col cols="12">
               <div
-                :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'title font-weight-bold': $vuetify.breakpoint.smAndDown}"
+                :class="{'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp, 'display-1  font-weight-bold': $vuetify.breakpoint.smAndDown}"
               >Hi, I'm Facundo.</div>
               <div
-                :class="{'headline': $vuetify.breakpoint.smAndUp, 'subtitle-1': $vuetify.breakpoint.smAndDown}"
+                :class="{'headline': $vuetify.breakpoint.smAndUp, 'title': $vuetify.breakpoint.smAndDown}"
               >I design and build websites and applications.</div>
             </v-col>
           </v-row>
         </v-container>
       </v-layout>
-    </v-img>
+    </v-parallax>
     <v-container class="mt-10">
       <v-layout wrap>
         <v-flex xs12>
-          <div class="display-2 font-weight-bold" id="about">About me</div>
+          <div class="display-2 font-weight-bold max-width" id="about">About me </div>
         </v-flex>
-        <v-flex xs12 mt-5 mb-10>
+        <v-flex xs12 my-10>
           <div class="body-1">{{aboutText}}</div>
+          <br>
         </v-flex>
       </v-layout>
+      <br>
       <v-layout wrap my-5 mt-5>
         <v-flex xs12>
           <div class="display-2 font-weight-bold mb-5" id="portfolio">Some of my projects</div>

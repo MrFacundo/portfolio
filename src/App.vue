@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <p-toolbar />
-    <v-content style="background-color: #fff">
+    <v-main style="background-color: #fff">
       <router-view />
-    </v-content>
+    </v-main>
     <p-footer />
   </v-app>
 </template>
