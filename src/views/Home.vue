@@ -79,7 +79,7 @@ export default {
   data() {
     return {
       aboutText:
-        "I am a front-end developer from Buenos Aires, currently based in Berlin. A recent bootcamp graduate, I take every opportunity I can to learn and apply new things on front-end projects. Besides programming, I've got a special interest in jazz and cats.",
+        "I am a front-end developer from Buenos Aires, currently based in Berlin. I build projects using HTML, CSS and Javascript. Besides programming, I've got a special interest in jazz and cats.",
       apps: [
         {
           name: "Secret Chef",
@@ -92,7 +92,7 @@ export default {
             },
           ],
           description:
-            "Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked. A Ruby on Rails project I developed during my while studying at Le Wagon Bootcamp.",
+            "Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked. A Ruby on Rails full-stack project.",
           technologies: [
             {
               name: "Ruby on Rails",
@@ -117,47 +117,6 @@ export default {
             name: "github",
             icon: "mdi-github",
             link: "https://github.com/MrFacundo/Who-s-cooking",
-          },
-        },
-        {
-          name: "Video game Quiz",
-          price: "COMING SOON",
-          logo: "quiz.png",
-          platforms: [
-            {
-              name: "apple",
-              icon: "mdi-apple",
-              link: "https://mrfacundo.github.io/vueJS-videogame-quiz/",
-            },
-            {
-              name: "android",
-              icon: "mdi-android",
-              link: "",
-            },
-          ],
-          description:
-            "A simple quiz I built to get started with Vue.js.",
-          technologies: [
-            {
-              name: "VueJS",
-              icon: "mdi-vuejs",
-              link: "",
-            },
-            {
-              name: "Bootstrap",
-              icon: "mdi-bootstrap",
-              link: "",
-            },
-            {
-              name: "Javascript",
-              icon: "mdi-language-javascript",
-              link: "",
-            },
-          ],
-          code: {
-            name: "github",
-            icon: "mdi-github",
-            link: "https://github.com/MrFacundo/vueJS-videogame-quiz",
           },
         },
         {
@@ -207,7 +166,39 @@ export default {
           },
         },
         {
-          name: "JuniorDev Positions (to be deployed)",
+          name: "Job Search UI",
+          logo: "job-search-ui.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://job-search-ui398.herokuapp.com/",
+            },
+          ],
+          description:
+            "Another job board Frontend app. This one lists job posts by fetching search results from the Joblocal (local job offers in Germany) API.",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+            },
+            {
+              name: "Express.js",
+              icon: "mdi-api",
+            },
+            {
+              name: "React-Bootstrap",
+              icon: "mdi-bootstrap",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/job-search-ui/",
+          },
+        },
+        {
+          name: "JuniorDev Positions",
           logo: "juniordevpos.png",
           platforms: [
             {
@@ -244,13 +235,13 @@ export default {
           },
         },
         {
-          name: "E-commerce (to be deployed)",
+          name: "E-commerce",
           logo: "ecommerce.png",
           platforms: [
             {
               name: "apple",
               icon: "mdi-apple",
-              link: "https://secretchef1.herokuapp.com/",
+              link: "",
             },
           ],
           description:
@@ -276,38 +267,7 @@ export default {
             link: "https://github.com/MrFacundo/e-commerce",
           },
         },
-        {
-          name: "Job Search UI",
-          logo: "job-search-ui.png",
-          platforms: [
-            {
-              name: "apple",
-              icon: "mdi-apple",
-              link: "https://job-search-ui398.herokuapp.com/",
-            },
-          ],
-          description:
-            "Another job board Frontend app. This one lists job posts by fetching search results from the Joblocal (local job offers in Germany) API.",
-          technologies: [
-            {
-              name: "React",
-              icon: "mdi-react",
-            },
-            {
-              name: "Express.js",
-              icon: "mdi-api",
-            },
-            {
-              name: "React-Bootstrap",
-              icon: "mdi-bootstrap",
-            },
-          ],
-          code: {
-            name: "github",
-            icon: "mdi-github",
-            link: "https://github.com/MrFacundo/job-search-ui/",
-          },
-        },
+        
         {
           name: "Weather App",
           logo: "weather.png",
@@ -342,6 +302,87 @@ export default {
             name: "github",
             icon: "mdi-github",
             link: "https://github.com/MrFacundo/weatherapp3",
+          },
+        },
+        {
+          name: "Video game Quiz",
+          price: "COMING SOON",
+          logo: "quiz.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://mrfacundo.github.io/vueJS-videogame-quiz/",
+            },
+            {
+              name: "android",
+              icon: "mdi-android",
+              link: "",
+            },
+          ],
+          description:
+            "A simple quiz I built to get started with Vue.js.",
+          technologies: [
+            {
+              name: "VueJS",
+              icon: "mdi-vuejs",
+              link: "",
+            },
+            {
+              name: "Bootstrap",
+              icon: "mdi-bootstrap",
+              link: "",
+            },
+            {
+              name: "Javascript",
+              icon: "mdi-language-javascript",
+              link: "",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/vueJS-videogame-quiz",
+          },
+        },
+        {
+          name: "Notes",
+          logo: "notes.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://pure-gorge-50705.herokuapp.com/",
+            },
+            {
+              name: "android",
+              icon: "mdi-android",
+              link: "",
+            },
+          ],
+          description:
+            "A simple notes app built in React and Styled Components.",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+              link: "",
+            },
+            {
+              name: "Styled Components",
+              icon: "mdi-palette",
+              link: "",
+            },
+            {
+              name: "Javascript",
+              icon: "mdi-language-javascript",
+              link: "",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/notes",
           },
         },
       ],
