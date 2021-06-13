@@ -120,6 +120,53 @@ export default {
           },
         },
         {
+          name: "MERN Shopping Cart",
+          price: "COMING SOON",
+          logo: "mern-cart.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://mern-shopping-cart1.herokuapp.com",
+            },
+            {
+              name: "android",
+              icon: "mdi-android",
+              link: "",
+            },
+          ],
+          description:
+            "A mini-MERN ecommerce app, featuring an Express / Node server, a database hosted in MongoDB and a front end built with React and Redux.",
+          technologies: [
+            {
+              name: "React",
+              icon: "mdi-react",
+            },
+                        {
+              name: "Redux",
+              icon: "mdi-react",
+            },
+            {
+              name: "MongoDB",
+              icon: "mdi-database-search",
+            },
+            {
+              name: "Node",
+              icon: "mdi-language-javascript",
+            },
+            {
+              name: "Express",
+              icon: "mdi-server",
+              link: "",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/MERN-ecommerce",
+          },
+        },
+        {
           name: "Shoot me",
           price: "COMING SOON",
           logo: "shoot-me.png",
@@ -136,7 +183,7 @@ export default {
             },
           ],
           description:
-            "Similar to AirBnB, but for filming locations. Another Ruby on Rails project I developed during my coding bootcamp.",
+            "Similar to AirBnB, but for filming locations. Another Ruby on Rails full stack project.",
           technologies: [
             {
               name: "Ruby on Rails",
@@ -176,7 +223,7 @@ export default {
             },
           ],
           description:
-            "Another job board Frontend app. This one lists job posts by fetching search results from the Joblocal (local job offers in Germany) API.",
+            "A job board frontend app. This one lists job posts by fetching search results from the Joblocal (local job offers in Germany) API.",
           technologies: [
             {
               name: "React",

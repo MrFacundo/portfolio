@@ -70,7 +70,7 @@ export default {
   transition: transform 400ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 .app-description {
-  min-height: 130px;
+  min-height: 110px;
   max-width: 100%;
   word-break: normal;
 }
