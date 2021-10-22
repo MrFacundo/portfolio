@@ -82,6 +82,39 @@ export default {
         "I am a front-end developer from Buenos Aires, currently based in Berlin. I build projects using HTML, CSS and Javascript. Besides programming, I've got a special interest in jazz and cats.",
       apps: [
         {
+          name: "Entretejiendo Voces",
+          logo: "entretejiendo.png",
+          platforms: [
+            {
+              name: "apple",
+              icon: "mdi-apple",
+              link: "https://entretejiendovoces.com.ar",
+            },
+          ],
+          description:
+            "A landing page designed for a team of mental health professionals offering group therapy and counseling. The website includes contacts through forms, custom domain email and a front-end that allows the client to write articles in a blog.",
+          technologies: [
+            {
+              name: "Wordpress",
+              icon: "mdi-wordpress",
+            },
+            {
+              name: "CSS",
+              icon: "mdi-language-css3",
+            },
+            {
+              name: "Javascript",
+              icon: "mdi-language-javascript",
+              link: "",
+            },
+          ],
+          code: {
+            name: "github",
+            icon: "mdi-github",
+            link: "https://github.com/MrFacundo/Who-s-cooking",
+          },
+        },
+        {
           name: "Secret Chef",
           logo: "secret-chef.png",
           platforms: [
