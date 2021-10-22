@@ -111,7 +111,7 @@ export default {
           code: {
             name: "github",
             icon: "mdi-github",
-            link: "https://github.com/MrFacundo/Who-s-cooking",
+            link: "",
           },
         },
         {
