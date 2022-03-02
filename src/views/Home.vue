@@ -43,7 +43,14 @@
 					</div>
 				</v-flex>
 				<v-flex xs12 my-10>
-					<div class="body-1">{{ aboutText }}</div>
+					<div
+						:class="{
+							'body-1 px-10 ': $vuetify.breakpoint.smAndUp,
+							'body-1': $vuetify.breakpoint.smAndDown,
+						}"
+					>
+						{{ aboutText }}
+					</div>
 					<br />
 				</v-flex>
 			</v-layout>
@@ -116,7 +123,7 @@ export default {
 	data() {
 		return {
 			aboutText:
-				"I am a front-end developer / designer from Buenos Aires, currently based in Lisbon ☀️. I build projects using HTML, CSS and Javascript. I can also use libraries and frameworks such as React Js, Vue Js and Ruby on Rails. I am interested in  Besides programming, I've got a special love for jazz and cats.",
+				"I am a front-end developer / designer from Buenos Aires, currently based in Lisbon ☀️. I build projects using HTML, CSS and Javascript. I can also use libraries and frameworks such as React Js, Vue Js and Ruby on Rails. Besides programming, I've got a special love for jazz and cats.",
 			apps: [
 				{
 					name: "Lisboa Em Tango (work in progress)",
@@ -129,7 +136,7 @@ export default {
 						},
 					],
 					description:
-						"A single-page website designed for a Tango Dancing School. My role: freelancer UX/UI designer and front-end developer. In this project, I took charge of research, branding, prototyping in Figma, planning for animations and front-end development using React Js, Tailwind and Framer Motion. New challenges included implementing animations and a multi language functionality",
+						"A single-page website designed for a Tango Dancing School. My role: freelancer UX/UI designer and front-end developer. In this project, I took charge of research, branding, prototyping in Figma, planning for animations and finally front-end development using React Js, Tailwind and Framer Motion. New challenges included implementing animations and a multi language functionality",
 					technologies: [
 						{
 							name: "React",
@@ -167,7 +174,7 @@ export default {
 						},
 					],
 					description:
-						"Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked. A Ruby on Rails full-stack project.",
+						"Order meal kits from your favourite restaurant, along with a cooking tutorial by the chef to show you exactly how the dish is cooked. A full-stack application prototype built for a start up with built Ruby on Rails. My role: along with a team of 3 other devs, prototyping, user-stories, UI design, relational databases and front-end development.",
 					technologies: [
 						{
 							name: "Ruby on Rails",
@@ -205,7 +212,7 @@ export default {
 						},
 					],
 					description:
-						"A landing page designed for a team of mental health professionals offering group therapy and counseling. The website includes contacts through forms, custom domain email and a front-end that allows the client to write articles in a blog.",
+						"A landing page designed for a team of mental health professionals offering group therapy and counseling. My role: freelancer UX/UI designer, customer capacitation. I implemented the platform required by the customer, and after research on existing websites offering the same services, implemented an according design.",
 					technologies: [
 						{
 							name: "Wordpress",
