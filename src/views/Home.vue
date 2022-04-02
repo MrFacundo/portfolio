@@ -126,17 +126,17 @@ export default {
 				"I am a front-end developer / designer from Buenos Aires, currently based in Lisbon ☀️. I build projects using HTML, CSS and Javascript. I can also use libraries and frameworks such as React Js, Vue Js and Ruby on Rails. Besides programming, I've got a special love for jazz and cats.",
 			apps: [
 				{
-					name: "Lisboa Em Tango (work in progress)",
+					name: "Lisboa Em Tango",
 					logo: "let.png",
 					platforms: [
 						{
 							name: "apple",
 							icon: "mdi-apple",
-							link: "http://lisboaemtango.herokuapp.com/",
+							link: "https://lisboaemtango.pt/",
 						},
 					],
 					description:
-						"A single-page website designed for a Tango Dancing School. My role: freelancer UX/UI designer and front-end developer. In this project, I took charge of research, branding, prototyping in Figma, planning for animations and finally front-end development using React Js, Tailwind and Framer Motion. New challenges included implementing animations and a multi language functionality",
+						"A single-page website designed for a Tango Dancing School. My role: freelancer UX/UI designer and front-end developer. In this project, I took charge of research, branding, prototyping in Figma, planning for animations and finally front-end development using React Js, Tailwind and Framer Motion. New challenges included implementing animations and a multi language functionality.",
 					technologies: [
 						{
 							name: "React",
@@ -555,6 +555,16 @@ export default {
 					value: "ftroitero@gmail.com",
 					link: "mailto:ftroitero@gmail.com",
 					icon: "mdi-email",
+				},
+				{
+					name: "WhatsApp",
+					value: "(49) 163-250-8154",
+					icon: "mdi-phone",
+				},
+				{
+					name: "Phone",
+					value: "(351) 933252437",
+					icon: "mdi-phone",
 				},
 				{
 					name: "LinkedIn",
