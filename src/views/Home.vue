@@ -1,33 +1,21 @@
 <template>
 	<div class="home">
-		<v-parallax
-			height="500"
-			dark
-			src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-		>
+		<v-parallax height="500" dark
+			src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
 			<v-layout fill-height align-center>
 				<v-container align-md="center" align-sm="start">
-					<v-row
-						align-md="center"
-						align-sm="start"
-						justify="center"
-						class="white--text"
-					>
+					<v-row align-md="center" align-sm="start" justify="center" class="white--text">
 						<v-col cols="12">
-							<div
-								:class="{
-									'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp,
-									'display-1  font-weight-bold': $vuetify.breakpoint.smAndDown,
-								}"
-							>
+							<div :class="{
+								'display-2 font-weight-bold ': $vuetify.breakpoint.smAndUp,
+								'display-1  font-weight-bold': $vuetify.breakpoint.smAndDown,
+							}">
 								Hi, I'm Facundo.
 							</div>
-							<div
-								:class="{
-									headline: $vuetify.breakpoint.smAndUp,
-									title: $vuetify.breakpoint.smAndDown,
-								}"
-							>
+							<div :class="{
+								headline: $vuetify.breakpoint.smAndUp,
+								title: $vuetify.breakpoint.smAndDown,
+							}">
 								I design and build web experiences.
 							</div>
 						</v-col>
@@ -43,12 +31,10 @@
 					</div>
 				</v-flex>
 				<v-flex xs12 my-10>
-					<div
-						:class="{
-							'body-1 px-10 ': $vuetify.breakpoint.smAndUp,
-							'body-1': $vuetify.breakpoint.smAndDown,
-						}"
-					>
+					<div :class="{
+						'body-1 px-10 ': $vuetify.breakpoint.smAndUp,
+						'body-1': $vuetify.breakpoint.smAndDown,
+					}">
 						{{ aboutText }}
 					</div>
 					<br />
@@ -123,8 +109,80 @@ export default {
 	data() {
 		return {
 			aboutText:
-				"I am a front-end developer / designer from Buenos Aires, currently based in Lisbon ☀️. I build projects using HTML, CSS and Javascript. I can also use libraries and frameworks such as React Js, Vue Js and Ruby on Rails. Besides programming, I've got a special love for jazz and cats.",
+				"I am a web developer / designer from Buenos Aires, currently based in Lisbon ☀️. I've built websites and web apps with HTML, CSS, Javascript, PHP and Ruby. I've also use libraries and frameworks such as React Js, CodeIgniter and Ruby on Rails. I study C programming at 42 Lisbon. I love music and cats.",
 			apps: [
+				{
+					name: "Starmag.com",
+					logo: "stm.png",
+					platforms: [
+						{
+							name: "apple",
+							icon: "mdi-apple",
+							link: "https://www.starmag.com/",
+						},
+					],
+					description:
+						"Starmag is a web magazine that provides entertainment news for the french market. I was part of a team responsible of migrating the site from a CDM to a PHP framework and my role was implementing and mantaining features and components. I focused but did not limited to Front End development. The project was managed with Agile methodologies.",
+					technologies: [
+						{
+							name: "PHP",
+							icon: "mdi-language-php",
+						},
+						{
+							name: "MySQL",
+							icon: "mdi-database-search",
+						},
+						{
+							name: "Reddis",
+							icon: "mdi-database-cog",
+						},
+						{
+							name: "SEO",
+							icon: "mdi-poll",
+						},
+					],
+					code: {
+						name: "",
+						icon: "",
+						link: "",
+					},
+				},
+				{
+					name: "Maria Danai Eguiguren",
+					logo: "mde.png",
+					platforms: [
+						{
+							name: "apple",
+							icon: "mdi-apple",
+							link: "https://maegatsbyportfoliomain48188.gatsbyjs.io",
+						},
+					],
+					description:
+						"A single-page multilanguaje portfolio designed for a counseling / alt medicine provider. I took charge of research, branding, prototyping, front-end development and SEO setup. New challenges included trying out new framework and libraries.",
+					technologies: [
+						{
+							name: "React",
+							icon: "mdi-react",
+						},
+						{
+							name: "Gatsby",
+							icon: "mdi-gatsby",
+						},
+						{
+							name: "GSAP",
+							icon: "mdi-cog-box",
+						},
+						{
+							name: "Node - Sass",
+							icon: "mdi-sass",
+						},
+					],
+					code: {
+						name: "github",
+						icon: "mdi-github",
+						link: "https://github.com/MrFacundo/landing-page1",
+					},
+				},
 				{
 					name: "Lisboa Em Tango",
 					logo: "let.png",
@@ -136,7 +194,7 @@ export default {
 						},
 					],
 					description:
-						"A single-page website designed for a Tango Dancing School. My role: freelancer UX/UI designer and front-end developer. In this project, I took charge of research, branding, prototyping in Figma, planning for animations and finally front-end development using React Js, Tailwind and Framer Motion. New challenges included implementing animations and a multi language functionality.",
+						"A single-page website designed for a Tango Dancing School. My role: UX/UI designer and front-end developer. On this project I took charge of research, branding, prototyping, planning for animations and front-end development. New challenges included implementing animations and a multi language functionality.",
 					technologies: [
 						{
 							name: "React",
@@ -160,7 +218,7 @@ export default {
 					code: {
 						name: "github",
 						icon: "mdi-github",
-						link: "https://github.com/MrFacundo/landing-page1",
+						link: "https://github.com/MrFacundo/MAE---Gatsby-Portfolio-",
 					},
 				},
 				{
