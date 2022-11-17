@@ -18,7 +18,4 @@ Portfolio website built with Vue js and Vuetify
 yarn install
 yarn run serve
 yarn gh-pages-deploy 
-yarn run build
-yarn run test
-yarn run lint
 ```
